@@ -77,8 +77,10 @@ BEFORE YOU BEGIN FILLING OUT THIS CLAIM FORM</h3>
     </asp:Label>
     <br />
     <asp:TextBox ID="txtHomeTelephoneNumber1" pattern="[0-9]*" MaxLength="3" aria-required="true" required="required" CssClass="tel-form-control inline" runat="server" />
-    - <asp:TextBox ID="txtHomeTelephoneNumber2" pattern="[0-9]*" MaxLength="3" aria-required="true" required="required" CssClass="tel-form-control inline" runat="server" />
-    - <asp:TextBox ID="txtHomeTelephoneNumber3" pattern="[0-9]*" MaxLength="4" aria-required="true" required="required" CssClass="tel-form-control inline" runat="server" />
+    -
+    <asp:TextBox ID="txtHomeTelephoneNumber2" pattern="[0-9]*" MaxLength="3" aria-required="true" required="required" CssClass="tel-form-control inline" runat="server" />
+    -
+    <asp:TextBox ID="txtHomeTelephoneNumber3" pattern="[0-9]*" MaxLength="4" aria-required="true" required="required" CssClass="tel-form-control inline" runat="server" />
     <br />
     <br />
     <asp:Label ID="Label5" AssociatedControlID="txtSSN"
@@ -115,6 +117,16 @@ access services between February 8, 2013 and [date of Preliminary Approval]?</le
             <asp:ListItem>No</asp:ListItem>
         </asp:RadioButtonList>
     </fieldset>
+    <br />
+    <br />
+    <asp:Label ID="Label8" AssociatedControlID="txtDate"
+        TabIndex="7"
+        AccessKey="d" runat="server">
+      Please list the approximate date or dates that you attempted to use services at a Coinstar
+Kiosk in California or were deterred from accessing products or services at a Coinstar Kiosk in
+California. <span style="color:red">*</span><br />
+    </asp:Label>
+    <asp:TextBox ID="txtDate" aria-required="true" type="date" required="required" CssClass="form-control" runat="server" />
     <br />
     <br />
     <input type="Submit" class="btn-nxt" name="Submit" value="Submit">
